@@ -75,15 +75,47 @@
         <img src='https://placehold.it/150x80?text=IMAGE' class='img-responsive' style="width:100%" alt="San Diego Top Spots">'
         </a>
       </div>
+
+      <div class='col-sm-4'>
+          <p>Mortgage Calculator</p>
+          <a href='https://lim-mortgage-calculator.herokuapp.com/' target='_blank'>
+          <img src='https://placehold.it/150x80?text=IMAGE' class='img-responsive' style="width:100%" alt="San Diego Top Spots">'
+          </a>
+        </div>
+
+        <div class='col-sm-4'>
+            <p>VSTDA</p>
+            <a href='https://lim-vstda.herokuapp.com/' target='_blank'>
+            <img src='https://placehold.it/150x80?text=IMAGE' class='img-responsive' style="width:100%" alt="San Diego Top Spots">'
+            </a>
+          </div>
+
       </div>
 
     <!-- Contacts Here -->
     <div id='contact' class='container-fluid text-center bg-grey tab-pane fade'>
         <h3> Contact</h3>
+        <div class="col-md-8">
+            <form class="row" action="/thanks" method="POST">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="firstName" name="firstName" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+              <textarea class="form-control" id="comment" name="comment" placeholder="Comment" rows="5"></textarea>
+              <br>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <button class="btn pull-right" type="submit">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
       </div>
 </div>
     <footer class="container-fluid text-center">
-      <p>Footer Text</p>
+        <p>Copyright Christopher Lim 2018. All Rights Reserve</p>
     </footer>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
