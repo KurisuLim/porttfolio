@@ -1,10 +1,105 @@
-<html>
-  <head>
-    <title> Lim's Portfolio </title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Lim's Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
+</head>
+
   <body>
-    <div>
-        I am <%= person.firstName %> <%= person.lastName %>
+    <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#myPage">Christopher Lim</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a data-toggle="pill" href="#about">About</a></li>
+            <li><a data-toggle="pill" href="#portfolio">Portfolio</a></li>
+            <li><a data-toggle="pill" href="#contact">Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="jumbotron">
+      <div class="container text-center">
+        <h1>Christopher Lim</h1>      
+        <p>Software Engineer || Fitness Enthusiast</p>
+      </div>
     </div>
+    
+    <body>
+
+      <div class='tab-content'>
+    <!-- About me Section -->
+    <div id='about' class='container-fluid text-center bg-grey tab-pane fade in active'>
+      <div class='row'>
+        <div class='col-sm-6'>
+            <h2>About Me</h2>
+            <br>
+            <h4>Origin Stuff</h4>
+            <p>Paragraph here</p>
+          </div>
+        </div>
+        <div class='col-sm-6'>
+          <div id='about'>
+
+            <p>Something here</p>
+          </div>
+      </div>
+    </div>
+
+    </div>
+  </div>
+
+    <!-- Portfolio Here -->
+    <div id='portfolio' class='container-fluid text-center bg-grey tab-pane fade in active'>
+        <div class='row'>
+        <div class='col-sm-6'>
+        <h2>Portfolio</h2>
+        <br>
+        <h4>Some Projects that I work on:</h4>
+      </div>
+      <div class='col-sm-4'>
+        <p>San Diego Top Spots</p>
+        <a href='https://lim-san-diego-top-spots.herokuapp.com/' target='_blank'>
+        <img src='https://placehold.it/150x80?text=IMAGE' class='img-responsive' style="width:100%" alt="San Diego Top Spots">'
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+    <footer class="container-fluid text-center">
+      <p>Footer Text</p>
+    </footer>
   </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>
