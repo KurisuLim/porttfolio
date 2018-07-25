@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require ('body-parser');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-require('dotnev').config();
+//require('dotnev').config();
 
 
 const app = express();
@@ -12,10 +12,10 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
-app.use(express.static(_dirname + '/public'));
+//app.use(express.static(_dirname + '/public'));
 //Here we're setting the views diredtory to be ./views
 //thereby letting the app know where to find the template files
-app.set('views', './view');
+app.set('views', './views');
 app.set('view engine', 'ejs');
 
 app.get('/', (req, res) => {
