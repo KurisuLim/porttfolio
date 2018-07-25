@@ -12,7 +12,7 @@ app.use(morgan('dev'))
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended: true}))
 
-app.use(express.static(_dirname + '/public'));
+
 //Here we're setting the views diredtory to be ./views
 //thereby letting the app know where to find the template files
 app.set('views', './views');
