@@ -14,6 +14,7 @@
   "author": "Christopher Lim <toffer.lim87@gmail.com",
   "license": "ISC",
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
