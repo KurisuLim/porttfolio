@@ -4,19 +4,24 @@
   "description": "My personal portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url":""
+    "url": "git+https://github.com/KurisuLim/porttfolio.git"
   },
-  
-  "author": "Christopher Lim",
+  "author": "Christopher Lim <toffer.lim87@gmail.com",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
     "morgan": "^1.9.0"
-  }
+  },
+  "devDependencies": {},
+  "keywords": [
+    "My",
+    "Portfolio"
+  ]
 }
