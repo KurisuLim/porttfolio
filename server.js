@@ -49,7 +49,7 @@ app.get("*", function (req,res){
   res.send("Opps. Something went wrong!...Err 404").status(404);
 })
 
-app.listen(8080, () => {
-    console.log('listening at http://localhost:8080');
+app.listen(process.env.PORT || 5000, function() {
+  console.log("Server started.......");
 });
 
