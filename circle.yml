@@ -6,7 +6,7 @@
       - run:
           name: Deploy Master to Heroku
           command: |
-            git push https://heroku:$7bfeb5a2-4f0d-45fb-8251-5d216fc72400@git.heroku.com/$lim-node200-ejs-portfolio
+            git push https://heroku:$APIHERE@git.heroku.com/$lim-node200-ejs-portfolio
 .git master
 
 workflows:
