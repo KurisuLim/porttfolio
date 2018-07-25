@@ -3,7 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require ('body-parser');
 const sgMail = require('@sendgrid/mail');
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-//require('dotnev').config();
+require('dotnev').config();
 
 
 const app = express();
